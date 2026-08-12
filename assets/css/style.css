@@ -522,15 +522,15 @@ html {
 
 #bespoke-integrations {
     padding: 120px 0;
-    background: #0E3A53;
-    color: #F7F8F6;
+    background: #EDDD53;
+    color: #0E3A53;
 }
 
 #bespoke-integrations .eyebrow {
     font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #EDDD53;
+    color: #9B2A8A;
     margin-bottom: 20px;
 }
 
@@ -539,31 +539,31 @@ html {
     font-size: clamp(2.6rem, 5vw, 4.5rem);
     line-height: 1;
     font-weight: 700;
-    color: #F7F8F6;
+    color: #0E3A53;
     margin: 0;
 }
 
 #bespoke-integrations p {
-    color: #DCE7E8;
+    color: #0E3A53;
     line-height: 1.7;
 }
 
 #bespoke-integrations .lead {
     font-size: 1.35rem;
-    color: #F7F8F6;
+    color: #0E3A53;
 }
 
 .bespoke-highlight {
     margin-top: 35px;
     padding: 25px 30px;
-    border-left: 5px solid #57C785;
-    background: rgba(255, 255, 255, 0.06);
+    border-left: 5px solid #9B2A8A;
+    background: rgba(255, 255, 255, 0.35);
 }
 
 .bespoke-highlight strong {
     font-family: "Nunito", sans-serif;
     font-size: 1.2rem;
-    color: #F7F8F6;
+    color: #0E3A53;
 }
 
 @media (max-width: 768px) {
@@ -573,6 +573,51 @@ html {
     }
 
     #bespoke-integrations h2 {
+        margin-bottom: 45px;
+    }
+
+}
+
+#software-problem {
+    padding: 110px 0;
+    background: #FFFFFF;
+}
+
+#software-problem .eyebrow {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #9B2A8A;
+    margin-bottom: 20px;
+}
+
+#software-problem h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1;
+    font-weight: 700;
+    color: #0E3A53;
+    margin: 0;
+}
+
+#software-problem p {
+    color: #425466;
+    line-height: 1.7;
+}
+
+#software-problem .lead {
+    font-size: 1.35rem;
+    color: #0E3A53;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+
+    #software-problem {
+        padding: 80px 0;
+    }
+
+    #software-problem h2 {
         margin-bottom: 45px;
     }
 
