@@ -623,6 +623,291 @@ html {
 
 }
 
+#software-services {
+    padding: 110px 0;
+    background: #F7F8F6;
+}
+
+#software-services .eyebrow {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #9B2A8A;
+    margin-bottom: 20px;
+}
+
+#software-services h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1;
+    font-weight: 700;
+    color: #0E3A53;
+    margin: 0;
+}
+
+
+/* Cards */
+.software-card {
+    height: 100%;
+    padding: 45px 35px;
+
+    background: #FFFFFF;
+
+    border-top: 6px solid #57C785;
+
+    box-shadow: 0 10px 30px rgba(14, 58, 83, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.col-lg-4:nth-child(2) .software-card {
+    border-top-color: #9B2A8A;
+}
+
+.col-lg-4:nth-child(3) .software-card {
+    border-top-color: #EDDD53;
+}
+
+.software-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 35px rgba(14, 58, 83, 0.12);
+}
+
+.software-card h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0E3A53;
+    margin-bottom: 20px;
+}
+
+.software-card p {
+    color: #425466;
+    line-height: 1.7;
+    margin: 0;
+}
+
+#software-process {
+    padding: 120px 0;
+    background: #FFFFFF;
+}
+
+#software-process .eyebrow {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #9B2A8A;
+    margin-bottom: 20px;
+}
+
+#software-process h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1;
+    font-weight: 700;
+    color: #0E3A53;
+    margin: 0;
+}
+
+#software-process p {
+    color: #425466;
+    line-height: 1.7;
+}
+
+#software-process .lead {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0E3A53;
+}
+
+.software-process-list {
+    margin-top: 40px;
+    border-top: 1px solid #DCE7E8;
+}
+
+.software-process-list div {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #DCE7E8;
+}
+
+.software-process-list strong {
+    min-width: 100px;
+
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    color: #0E3A53;
+}
+
+.software-process-list span {
+    color: #425466;
+}
+
+@media (max-width: 768px) {
+
+    #software-process {
+        padding: 80px 0;
+    }
+
+    #software-process h2 {
+        margin-bottom: 45px;
+    }
+
+    .software-process-list div {
+        display: block;
+    }
+
+    .software-process-list strong {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #software-services {
+        padding: 80px 0;
+    }
+
+    #software-services h2 {
+        font-size: 2.8rem;
+    }
+
+    .software-card {
+        padding: 35px 30px;
+    }
+
+}
+
+#bespoke-development {
+    padding: 120px 0;
+    background: #9B2A8A;
+    color: #F7F8F6;
+}
+
+#bespoke-development .eyebrow {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #EDDD53;
+    margin-bottom: 20px;
+}
+
+#bespoke-development h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 4.8rem);
+    line-height: 1;
+    font-weight: 700;
+    color: #F7F8F6;
+    margin-bottom: 30px;
+}
+
+#bespoke-development p {
+    color: #F7EAF5;
+    line-height: 1.7;
+}
+
+#bespoke-development .lead {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #F7F8F6;
+}
+
+
+/* Technology list */
+
+.technology-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    padding: 30px;
+    margin-left: 40px;
+
+    border-left: 5px solid #EDDD53;
+}
+
+.technology-strip span {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    color: #F7F8F6;
+
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+
+    #bespoke-development {
+        padding: 80px 0;
+    }
+
+    #bespoke-development h2 {
+        font-size: 2.8rem;
+    }
+
+    .technology-strip {
+        margin: 45px 0 0;
+    }
+
+}
+
+#software-cta {
+    padding: 120px 0;
+    background: #FFFFFF;
+}
+
+#software-cta .eyebrow {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #9B2A8A;
+    margin-bottom: 20px;
+}
+
+#software-cta h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1;
+    font-weight: 700;
+    color: #0E3A53;
+    margin-bottom: 30px;
+}
+
+#software-cta p:not(.eyebrow) {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #425466;
+    line-height: 1.7;
+    font-size: 1.15rem;
+}
+
+@media (max-width: 768px) {
+
+    #software-cta {
+        padding: 80px 0;
+    }
+
+    #software-cta h2 {
+        font-size: 2.8rem;
+    }
+
+}
+
 /* =========================================
    FOOTER
    ========================================= */
