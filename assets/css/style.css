@@ -908,6 +908,271 @@ html {
 
 }
 
+#about-story {
+    padding: 110px 0;
+    background: #FFFFFF;
+}
+
+#about-story .eyebrow {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #9B2A8A;
+    margin-bottom: 20px;
+}
+
+#about-story h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1;
+    font-weight: 700;
+    color: #0E3A53;
+    margin-bottom: 30px;
+}
+
+#about-story p {
+    color: #425466;
+    line-height: 1.7;
+}
+
+#about-story .lead {
+    font-size: 1.3rem;
+    color: #0E3A53;
+}
+
+.about-photo {
+    margin-right: 50px;
+}
+
+.about-photo img {
+    width: 100%;
+    display: block;
+}
+
+#about-approach {
+    padding: 120px 0;
+    background: #9B2A8A;
+}
+
+#about-approach .eyebrow {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #EDDD53;
+    margin-bottom: 20px;
+}
+
+#about-approach h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1;
+    font-weight: 700;
+    color: #F7F8F6;
+    margin-bottom: 30px;
+}
+
+#about-approach p {
+    color: #F7EAF5;
+    line-height: 1.7;
+}
+
+#about-approach .lead {
+    font-size: 1.35rem;
+    color: #F7F8F6;
+}
+
+#about-yoga {
+    position: relative;
+
+    padding: 120px 0;
+
+    background-image: url("../images/yoga-studio.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    color: #F7F8F6;
+}
+
+.about-yoga-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(87, 199, 133, 0.88);
+}
+
+#about-yoga .container {
+    position: relative;
+    z-index: 1;
+}
+
+#about-yoga .eyebrow {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #0E3A53;
+    margin-bottom: 20px;
+}
+
+#about-yoga h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1;
+    font-weight: 700;
+    color: #F7F8F6;
+    margin-bottom: 15px;
+}
+
+#about-yoga p {
+    color: #F0F6F5;
+    line-height: 1.7;
+}
+
+#about-yoga .lead {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #F7F8F6;
+}
+
+.about-yoga-block {
+    min-height: 350px;
+    margin-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    border: 5px solid #F7F8F6;
+}
+
+.about-yoga-block span {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(5rem, 10vw, 9rem);
+    line-height: 0.9;
+    font-weight: 700;
+    color: #F7F8F6;
+}
+
+.about-yoga-block p {
+    max-width: 220px;
+    margin: 20px 0 0;
+    font-weight: 700;
+}
+
+#about-tis {
+    padding: 120px 0;
+    background: #EDDD53;
+}
+
+#about-tis .eyebrow {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #9B2A8A;
+    margin-bottom: 20px;
+}
+
+#about-tis h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1;
+    font-weight: 700;
+    color: #0E3A53;
+    margin-bottom: 30px;
+}
+
+#about-tis p {
+    color: #0E3A53;
+    line-height: 1.7;
+}
+
+#about-tis .lead {
+    font-size: 1.3rem;
+    color: #0E3A53;
+}
+
+#about-personal {
+    padding: 110px 0;
+    background: #F7EEF6;
+}
+
+#about-personal .eyebrow {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #9B2A8A;
+    margin-bottom: 20px;
+}
+
+#about-personal h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1;
+    font-weight: 700;
+    color: #0E3A53;
+    margin-bottom: 30px;
+}
+
+#about-personal p {
+    color: #425466;
+    line-height: 1.7;
+}
+
+#about-cta {
+    padding: 110px 0;
+    background: #FFFFFF;
+}
+
+#about-cta h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1;
+    font-weight: 700;
+    color: #0E3A53;
+    margin-bottom: 20px;
+}
+
+#about-cta p {
+    font-size: 1.25rem;
+    color: #425466;
+}
+
+@media (max-width: 768px) {
+
+    #about-story,
+    #about-approach,
+    #about-tis,
+    #about-personal,
+    #about-cta {
+        padding: 80px 0;
+    }
+
+    #about-yoga {
+        padding: 80px 0;
+    }
+
+    #about-story h2,
+    #about-approach h2,
+    #about-yoga h2,
+    #about-tis h2,
+    #about-personal h2,
+    #about-cta h2 {
+        font-size: 2.8rem;
+    }
+
+    .about-photo {
+        margin: 0 0 50px;
+    }
+
+    .about-yoga-block {
+        margin: 0 0 50px;
+        min-height: 280px;
+    }
+
+}
+
 /* =========================================
    FOOTER
    ========================================= */
