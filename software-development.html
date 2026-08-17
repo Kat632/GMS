@@ -119,84 +119,90 @@
 
     </nav>
 
-
     <!-- =========================
-         MOBILE NAVIGATION
-         ========================= -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light show-on-mobile nav-opaque">
+     MOBILE NAVIGATION
+     ========================= -->
 
-        <div class="container">
+    <nav class="show-on-mobile mobile-nav">
+
+        <div class="container mobile-nav-bar">
 
             <a class="navbar-brand" href="#hero">
                 <img src="./assets/images/android-chrome-512x512.png"
-                     alt="Logo"
-                     height="40">
+                    alt="Logo"
+                    height="40">
             </a>
 
-            <button class="navbar-toggler ml-auto"
+            <button class="mobile-menu-toggle"
+                    id="mobileMenuToggle"
                     type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    aria-label="Open navigation"
+                    aria-expanded="false">
 
-                <span class="navbar-toggler-icon"></span>
+                <span></span>
+                <span></span>
+                <span></span>
 
             </button>
 
+        </div>
 
-            <div class="collapse navbar-collapse bg-light" id="navbarCollapse">
 
-                <ul class="navbar-nav ml-auto">
+        <!-- FULL-SCREEN MOBILE MENU -->
 
-                    <li class="nav-item">
-                        <a class="nav-link scrollto" href="index.html">
-                            Home
-                        </a>
+        <div class="mobile-menu" id="mobileMenu">
+
+            <div class="mobile-menu-content">
+
+                <ul class="mobile-menu-links">
+
+                    <li>
+                        <a href="index.html">Home</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">
-                            About
-                        </a>
+                    <li>
+                        <a href="about.html">About</a>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="mobile-services">
 
-                        <a class="nav-link dropdown-toggle"
-                           href="#"
-                           id="mobileServicesDropdown"
-                           role="button"
-                           data-toggle="dropdown"
-                           aria-haspopup="true"
-                           aria-expanded="false">
+                        <button class="mobile-services-toggle"
+                                type="button"
+                                aria-expanded="false">
+
                             Services
-                        </a>
 
-                        <div class="dropdown-menu"
-                             aria-labelledby="mobileServicesDropdown">
+                            <span class="services-arrow">+</span>
 
-                            <a class="dropdown-item" href="web-design.html">
-                                Web Design
-                            </a>
+                        </button>
 
-                            <a class="dropdown-item" href="software-development.html">
-                                Software Development
-                            </a>
 
-                            <a class="dropdown-item" href="integrations.html">
-                                Integrations
-                            </a>
+                        <ul class="mobile-services-links">
 
-                        </div>
+                            <li>
+                                <a href="web-design.html">
+                                    Web Design
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="software-development.html">
+                                    Software Development
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="integrations.html">
+                                    Integrations
+                                </a>
+                            </li>
+
+                        </ul>
 
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link scrollto" href="#contact">
-                            Contact
-                        </a>
+                    <li>
+                        <a href="#contact">Contact</a>
                     </li>
 
                 </ul>
@@ -221,13 +227,14 @@
 
         <p>
             When off-the-shelf software doesn't quite fit,
-            we build something that does.
+            I build something that does.
         </p>
 
     </div>
 
         <a href="#software-problem" class="scroll-down" aria-label="Scroll down">
-        <span></span>
+            <span></span>
+        </a>
 
 </section>
 
@@ -288,7 +295,7 @@
 
             <div class="col-lg-8">
 
-                <p class="eyebrow">WHAT WE BUILD</p>
+                <p class="eyebrow">WHAT I BUILD</p>
 
                 <h2>
                     Software that solves<br>
@@ -326,7 +333,7 @@
                     <h3>Web Applications</h3>
 
                     <p>
-                        More than a website. We build interactive web
+                        More than a website. I build interactive web
                         applications that allow your customers or your
                         team to actually do things online.
                     </p>
@@ -365,7 +372,7 @@
 
             <div class="col-lg-5">
 
-                <p class="eyebrow">HOW WE APPROACH IT</p>
+                <p class="eyebrow">HOW I APPROACH IT</p>
 
                 <h2>
                     You don't need to know
@@ -394,7 +401,7 @@
                 </p>
 
                 <p>
-                    We'll work with you to understand the problem, explore
+                    I'll work with you to understand the problem, explore
                     what's possible and find a sensible way forward.
                 </p>
 
@@ -452,7 +459,7 @@
                 </p>
 
                 <p>
-                    We can take your requirements, your existing systems
+                    I can take your requirements, your existing systems
                     and the way your business actually works, and turn
                     that into software that makes sense.
                 </p>
@@ -461,7 +468,7 @@
                     Whether that's a completely bespoke application,
                     an internal business tool, an automated process or
                     something that connects your existing systems,
-                    we'll find the right approach.
+                    I'll find the right approach.
                 </p>
 
             </div>

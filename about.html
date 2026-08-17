@@ -119,84 +119,90 @@
 
     </nav>
 
-
     <!-- =========================
-         MOBILE NAVIGATION
-         ========================= -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light show-on-mobile nav-opaque">
+     MOBILE NAVIGATION
+     ========================= -->
 
-        <div class="container">
+    <nav class="show-on-mobile mobile-nav">
+
+        <div class="container mobile-nav-bar">
 
             <a class="navbar-brand" href="#hero">
                 <img src="./assets/images/android-chrome-512x512.png"
-                     alt="Logo"
-                     height="40">
+                    alt="Logo"
+                    height="40">
             </a>
 
-            <button class="navbar-toggler ml-auto"
+            <button class="mobile-menu-toggle"
+                    id="mobileMenuToggle"
                     type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    aria-label="Open navigation"
+                    aria-expanded="false">
 
-                <span class="navbar-toggler-icon"></span>
+                <span></span>
+                <span></span>
+                <span></span>
 
             </button>
 
+        </div>
 
-            <div class="collapse navbar-collapse bg-light" id="navbarCollapse">
 
-                <ul class="navbar-nav ml-auto">
+        <!-- FULL-SCREEN MOBILE MENU -->
 
-                    <li class="nav-item">
-                        <a class="nav-link scrollto" href="index.html">
-                            Home
-                        </a>
+        <div class="mobile-menu" id="mobileMenu">
+
+            <div class="mobile-menu-content">
+
+                <ul class="mobile-menu-links">
+
+                    <li>
+                        <a href="index.html">Home</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">
-                            About
-                        </a>
+                    <li>
+                        <a href="about.html">About</a>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="mobile-services">
 
-                        <a class="nav-link dropdown-toggle"
-                           href="#"
-                           id="mobileServicesDropdown"
-                           role="button"
-                           data-toggle="dropdown"
-                           aria-haspopup="true"
-                           aria-expanded="false">
+                        <button class="mobile-services-toggle"
+                                type="button"
+                                aria-expanded="false">
+
                             Services
-                        </a>
 
-                        <div class="dropdown-menu"
-                             aria-labelledby="mobileServicesDropdown">
+                            <span class="services-arrow">+</span>
 
-                            <a class="dropdown-item" href="web-design.html">
-                                Web Design
-                            </a>
+                        </button>
 
-                            <a class="dropdown-item" href="software-development.html">
-                                Software Development
-                            </a>
 
-                            <a class="dropdown-item" href="integrations.html">
-                                Integrations
-                            </a>
+                        <ul class="mobile-services-links">
 
-                        </div>
+                            <li>
+                                <a href="web-design.html">
+                                    Web Design
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="software-development.html">
+                                    Software Development
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="integrations.html">
+                                    Integrations
+                                </a>
+                            </li>
+
+                        </ul>
 
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link scrollto" href="#contact">
-                            Contact
-                        </a>
+                    <li>
+                        <a href="#contact">Contact</a>
                     </li>
 
                 </ul>
@@ -354,76 +360,6 @@
 
 
     <!-- =========================
-         YOGA / PEOPLE
-    ========================== -->
-
-    <section id="about-yoga" class="about-yoga">
-
-    <div class="about-yoga-overlay"></div>
-
-    <div class="container">
-
-        <div class="row align-items-center">
-
-            <div class="col-lg-5">
-
-                <div class="about-yoga-block">
-
-                    <span>13+</span>
-
-                    <p>
-                        years of building and running
-                        Great Malvern Yoga
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="col-lg-7">
-
-                <p class="eyebrow">
-                    THE OTHER SIDE OF MY WORK
-                </p>
-
-                <h2>
-                    Software isn't really
-                    about software.
-                </h2>
-
-                <p class="lead">
-                    It's about people.
-                </p>
-
-                <p>
-                    I've run Great Malvern Yoga for more than a decade,
-                    which has taught me a great deal about communication,
-                    listening, organisation and understanding what people
-                    actually need — rather than what you assume they need.
-                </p>
-
-                <p>
-                    Those skills are just as important when I'm working
-                    on a software project. The best solution in the world
-                    isn't much use if the people using it don't understand
-                    it, enjoy using it, or can't see why it makes their
-                    lives easier.
-                </p>
-
-                <p>
-                    That's something I care about a lot.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-    <!-- =========================
          THE INTEGRATION STATION
     ========================== -->
 
@@ -444,7 +380,8 @@
                     </h2>
 
                     <p class="lead">
-                        I'm also a co-founder of The Integration Station,
+                        Along with 
+                        <a href="https://www.linkedin.com/in/andy-mackellar/" target="_blank" rel="noopener noreferrer">Andy Mackellar</a>, I'm also a co-founder of The Integration Station,
                         where I work specifically on software integrations
                         and automation.
                     </p>
@@ -463,6 +400,76 @@
                     >
                         Visit The Integration Station
                     </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         YOGA / PEOPLE
+    ========================== -->
+
+    <section id="about-yoga" class="about-yoga">
+
+        <div class="about-yoga-overlay"></div>
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-5">
+
+                    <div class="about-yoga-block">
+
+                        <span>13+</span>
+
+                        <p>
+                            years of building and running
+                            Great Malvern Yoga
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7">
+
+                    <p class="eyebrow">
+                        THE OTHER SIDE OF MY WORK
+                    </p>
+
+                    <h2>
+                        Software isn't really
+                        about software.
+                    </h2>
+
+                    <p class="lead">
+                        It's about people.
+                    </p>
+
+                    <p>
+                        I've run Great Malvern Yoga for more than a decade,
+                        which has taught me a great deal about communication,
+                        listening, organisation and understanding what people
+                        actually need — rather than what you assume they need.
+                    </p>
+
+                    <p>
+                        Those skills are just as important when I'm working
+                        on a software project. The best solution in the world
+                        isn't much use if the people using it don't understand
+                        it, enjoy using it, or can't see why it makes their
+                        lives easier.
+                    </p>
+
+                    <p>
+                        That's something I care about a lot.
+                    </p>
 
                 </div>
 
@@ -502,7 +509,7 @@
 
                     <p>
                         I also speak French and Spanish, which occasionally
-                        turns out to be useful — although disappointingly
+                        turns out to be useful - although disappointingly
                         rarely when debugging PHP.
                     </p>
 

@@ -21,8 +21,13 @@ html {
     left: 0;
     right: 0;
     top: 0;
-    align-items: end;
+    /*align-items: end;*/
     z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+#header.nav-hidden {
+    transform: translateY(-100%);
 }
 
 /*
@@ -189,6 +194,25 @@ html {
     }
 }
 
+/* Site-wide button styling */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #9B2A8A;
+    border-radius: 0;
+    background: #9B2A8A;
+    color: #F7F8F6;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn:hover {
+    background: #071A2B;
+    border-color: #071A2B;
+    color: #F7F8F6;
+}
 
 /* Services on Homepage */
 
@@ -1205,6 +1229,11 @@ html {
     color: #0E3A53;
 }
 
+#about-tis .lead a {
+    color: #9B2A8A;
+    text-decoration: none;
+}
+
 #about-personal {
     padding: 110px 0;
     background: #F7EEF6;
@@ -1452,32 +1481,231 @@ html {
         width: 100% !important;
     }
 
+    /* =========================================================
+   MOBILE NAVIGATION
+   ========================================================= */
+
+    /* Mobile header bar */
+
+    .mobile-nav {
+        position: relative;
+        z-index: 1001;
+    }
+
+    .mobile-nav-bar {
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    /* Logo */
+
+    .mobile-nav .navbar-brand {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* Hamburger */
+
+    .mobile-menu-toggle {
+        position: relative;
+        z-index: 1003;
+
+        width: 44px;
+        height: 44px;
+
+        padding: 8px;
+
+        border: none;
+        background: transparent;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+    }
+
+    .mobile-menu-toggle span {
+        display: block;
+
+        width: 28px;
+        height: 3px;
+
+        margin: 3px 0;
+
+        background: #0E3A53;
+
+        transition: transform 0.3s ease,
+                    opacity 0.3s ease;
+    }
+
+
+    /* Hamburger becomes an X */
+
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+
+    /* =========================================================
+    FULL-SCREEN MENU
+    ========================================================= */
+
+    .mobile-menu {
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100vh;
+
+        z-index: 1002;
+
+        background: rgba(255, 255, 255, 0.92);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: opacity 0.3s ease,
+                    visibility 0.3s ease;
+    }
+
+
+    /* Menu open */
+
+    .mobile-menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    /* Menu contents */
+
+    .mobile-menu-content {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* Main links */
+
+    .mobile-menu-links {
+        list-style: none;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-menu-links > li {
+        margin: 8px 0;
+    }
+
+    .mobile-menu-links a,
+    .mobile-services-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        border: none;
+        background: transparent;
+
+        color: #0E3A53;
+
+        font-size: 28px;
+        font-weight: 700;
+
+        text-decoration: none;
+
+        padding: 8px 20px;
+
+        transition: color 0.2s ease;
+    }
+
+    .mobile-menu-links a:hover,
+    .mobile-services-toggle:hover {
+        color: #9B2A8A;
+        text-decoration: none;
+    }
+
+
+    /* =========================================================
+    MOBILE SERVICES
+    ========================================================= */
+
+    .mobile-services-toggle {
+        cursor: pointer;
+    }
+
+    .services-arrow {
+        font-size: 24px;
+        margin-left: 12px;
+
+        transition: transform 0.3s ease;
+    }
+
+
+    /* Services submenu */
+
+    .mobile-services-links {
+        list-style: none;
+
+        padding: 0;
+        margin: 0;
+
+        max-height: 0;
+        overflow: hidden;
+
+        transition: max-height 0.3s ease;
+    }
+
+
+    /* Services open */
+
+    .mobile-services.active .mobile-services-links {
+        max-height: 250px;
+    }
+
+    .mobile-services.active .services-arrow {
+        transform: rotate(45deg);
+    }
+
+
+    .mobile-services-links li {
+        margin: 2px 0;
+    }
+
+    .mobile-services-links a {
+        font-size: 20px;
+        font-weight: 700;
+
+        padding: 5px 20px;
+    }
+
+/*
     #header {
         position: relative;
         width: 100%;
     }
+*/
 
-
-    #navbarCollapse {
-        position: absolute;
-        top: 100%;
-        right: 15px;
-        left: auto;
-        width: 250px;
-        background: transparent !important;
-    }
-
-    #navbarCollapse .navbar-nav {
-        align-items: flex-end;
-        text-align: right;
-    }
-
-    #navbarCollapse .nav-link {
-        padding: 8px 0;
-        font-size: 18px;
-        color: #0E3A53;
-        font-weight: 700;
-    }
 
     #hero {
         margin-top: 100px;
@@ -1841,25 +2069,6 @@ html {
     font-size: 20px;
     line-height: 1.6;
     color: #071A2B;
-}
-
-.cta .btn {
-    display: inline-block;
-    padding: 15px 35px;
-    border: 2px solid #9B2A8A;
-    border-radius: 0;
-    background: #9B2A8A;
-    color: #F7F8F6;
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.25s ease;
-}
-
-.cta .btn:hover {
-    background: #071A2B;
-    border-color: #071A2B;
-    color: #F7F8F6;
 }
 
 /* ---------- Mobile ---------- */

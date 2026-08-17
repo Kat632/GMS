@@ -119,84 +119,90 @@
 
     </nav>
 
+     <!-- =========================
+     MOBILE NAVIGATION
+     ========================= -->
 
-    <!-- =========================
-         MOBILE NAVIGATION
-         ========================= -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light show-on-mobile nav-opaque">
+    <nav class="show-on-mobile mobile-nav">
 
-        <div class="container">
+        <div class="container mobile-nav-bar">
 
             <a class="navbar-brand" href="#hero">
                 <img src="./assets/images/android-chrome-512x512.png"
-                     alt="Logo"
-                     height="40">
+                    alt="Logo"
+                    height="40">
             </a>
 
-            <button class="navbar-toggler ml-auto"
+            <button class="mobile-menu-toggle"
+                    id="mobileMenuToggle"
                     type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    aria-label="Open navigation"
+                    aria-expanded="false">
 
-                <span class="navbar-toggler-icon"></span>
+                <span></span>
+                <span></span>
+                <span></span>
 
             </button>
 
+        </div>
 
-            <div class="collapse navbar-collapse bg-light" id="navbarCollapse">
 
-                <ul class="navbar-nav ml-auto">
+        <!-- FULL-SCREEN MOBILE MENU -->
 
-                    <li class="nav-item">
-                        <a class="nav-link scrollto" href="index.html">
-                            Home
-                        </a>
+        <div class="mobile-menu" id="mobileMenu">
+
+            <div class="mobile-menu-content">
+
+                <ul class="mobile-menu-links">
+
+                    <li>
+                        <a href="index.html">Home</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">
-                            About
-                        </a>
+                    <li>
+                        <a href="about.html">About</a>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="mobile-services">
 
-                        <a class="nav-link dropdown-toggle"
-                           href="#"
-                           id="mobileServicesDropdown"
-                           role="button"
-                           data-toggle="dropdown"
-                           aria-haspopup="true"
-                           aria-expanded="false">
+                        <button class="mobile-services-toggle"
+                                type="button"
+                                aria-expanded="false">
+
                             Services
-                        </a>
 
-                        <div class="dropdown-menu"
-                             aria-labelledby="mobileServicesDropdown">
+                            <span class="services-arrow">+</span>
 
-                            <a class="dropdown-item" href="web-design.html">
-                                Web Design
-                            </a>
+                        </button>
 
-                            <a class="dropdown-item" href="software-development.html">
-                                Software Development
-                            </a>
 
-                            <a class="dropdown-item" href="integrations.html">
-                                Integrations
-                            </a>
+                        <ul class="mobile-services-links">
 
-                        </div>
+                            <li>
+                                <a href="web-design.html">
+                                    Web Design
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="software-development.html">
+                                    Software Development
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="integrations.html">
+                                    Integrations
+                                </a>
+                            </li>
+
+                        </ul>
 
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link scrollto" href="#contact">
-                            Contact
-                        </a>
+                    <li>
+                        <a href="#contact">Contact</a>
                     </li>
 
                 </ul>
@@ -230,8 +236,8 @@
         </div>
 
         <a href="#web-design-intro" class="scroll-down" aria-label="Scroll down">
-        <span></span>
-    </a>
+            <span></span>
+        </a>
 
     </section>
 
