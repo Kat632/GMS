@@ -573,6 +573,11 @@ html {
     font-size: 1.25rem;
 }
 
+#zoho .lead a {
+    color: #9B2A8A;
+    text-decoration: none;
+}
+
 .zoho-highlight {
     position: relative;
     min-height: 350px;
