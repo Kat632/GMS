@@ -123,6 +123,64 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
+    // =========================================================
+    // CTA EXTENDING ARROW
+    // =========================================================
+
+    // =========================================================
+    // CTA EXTENDING ARROWS
+    // =========================================================
+
+    const ctaButtons = document.querySelectorAll(".cta-arrow-button");
+    const footer = document.querySelector("#footer");
+
+    if (ctaButtons.length && footer) {
+
+        ctaButtons.forEach(function (ctaButton) {
+
+            ctaButton.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+                // Stop arrow
+                if (ctaButton.classList.contains("arrow-active")) {
+
+                    ctaButton.classList.remove("arrow-active");
+
+                    ctaButton.style.removeProperty(
+                        "--arrow-height"
+                    );
+
+                    return;
+                }
+
+                // Start arrow
+
+                const buttonRect =
+                    ctaButton.getBoundingClientRect();
+
+                const footerRect =
+                    footer.getBoundingClientRect();
+
+                const arrowHeight =
+                    footerRect.top -
+                    buttonRect.bottom -
+                    10;
+
+                ctaButton.style.setProperty(
+                    "--arrow-height",
+                    arrowHeight + "px"
+                );
+
+                // Show arrow
+                ctaButton.classList.add("arrow-active");
+
+            });
+
+        });
+
+    }
+
 });
 
 

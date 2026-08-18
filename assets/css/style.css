@@ -1726,6 +1726,104 @@ html {
 
 }
 
+/* =========================
+   CTA FOOTER ARROW
+========================= */
+
+.cta-arrow-button {
+    position: relative;
+}
+
+.cta-arrow {
+    position: absolute;
+
+    top: calc(100% + 5px);
+    left: 50%;
+
+    width: 3px;
+    height: calc(var(--arrow-height) - 10px);
+
+    background-color: #9B2A8A;
+
+    transform: translateX(-50%);
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* Proper arrowhead */
+
+.cta-arrow::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 12px;
+    height: 12px;
+
+    border-right: 3px solid #9B2A8A;
+    border-bottom: 3px solid #9B2A8A;
+
+    transform: translateX(-50%) rotate(45deg);
+
+}
+
+
+/* Active */
+
+.cta-arrow-button.arrow-active .cta-arrow {
+    opacity: 1;
+
+    animation: cta-arrow-move 700ms ease-in-out infinite;
+}
+
+
+/* Movement */
+
+@keyframes cta-arrow-move {
+
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(8px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+}
+
+/* =========================
+   GET IN TOUCH BUTTON
+========================= */
+
+#about-cta .cta-arrow-button.btn-primary {
+    background-color: #9B2A8A;
+    border-color: #9B2A8A;
+    color: #FFFFFF;
+}
+
+/* Hover, focus and active states */
+
+#about-cta .cta-arrow-button.btn-primary:hover,
+#about-cta .cta-arrow-button.btn-primary:focus,
+#about-cta .cta-arrow-button.btn-primary:active,
+#about-cta .cta-arrow-button.btn-primary:focus-visible,
+#about-cta .cta-arrow-button.btn-primary.active {
+    background-color: #0B1F33;
+    border-color: #0B1F33;
+    color: #FFFFFF;
+    box-shadow: none;
+    outline: none;
+}
+
 /* =========================================
    WEB DESIGN PAGE
    ========================================= */
