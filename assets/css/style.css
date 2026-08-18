@@ -103,6 +103,8 @@ html {
     box-sizing: border-box;
 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     background: linear-gradient(
         105deg,
@@ -110,16 +112,19 @@ html {
         #57C785 48%,
         #EDDD53 100%
     );
-    
-    color: #071A2B; /* very dark blue */
+
+    color: #071A2B;
 }
 
 .hero-content {
-    max-width: 750px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 #hero p {
-    padding-left: 10px;
     font-family: "Nunito", sans-serif;
     font-size: 1.4rem;
     max-width: 600px;
@@ -128,7 +133,6 @@ html {
 }
 
 #hero h2 {
-    padding-left: 10px;
     font-family: "Nunito", sans-serif;
     font-size: 1.4rem;
     max-width: 600px;
@@ -137,7 +141,6 @@ html {
 }
 
 #hero h1 {
-    padding-left: 10px;
     font-family: "Nunito", sans-serif;
     font-size: clamp(3rem, 7vw, 6rem);
     line-height: 1;
